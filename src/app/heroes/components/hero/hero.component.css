@@ -1,0 +1,28 @@
+h1 {
+  font-size: 50px;
+}
+
+dl {
+  width: 100%;
+}
+
+td {
+  font-weight: bold;
+}
+
+dd {
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  background-color: lightblue;
+  width: 200px;
+}
+
+@media (width > 768px) {
+  dl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    place-items: center;
+    margin: 1rem 0rem;
+  }
+}
