@@ -1,0 +1,12 @@
+<h1>Hola dbz</h1>
+
+<div class="row">
+  <div class="col">
+      <dbz-list (onRemove)="onDeleteCharacter($event)" [characterList]="characters"></dbz-list>
+  </div>
+
+  <div class="col">
+      <!-- el emit retorna el dato con $event, el emit esta en el hijo, el padre recibe -->
+      <dbz-add (onNewCharacter)="onNewCharacter($event)" ></dbz-add>
+  </div>
+</div>
